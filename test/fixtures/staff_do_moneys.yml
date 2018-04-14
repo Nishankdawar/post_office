@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  passid: 1
+  sid: 1
+
+two:
+  passid: 1
+  sid: 1

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cid: 1
+  passid: 1
+  type: 
+  amount: MyString
+
+two:
+  cid: 1
+  passid: 1
+  type: 
+  amount: MyString
