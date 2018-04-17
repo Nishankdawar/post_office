@@ -5,10 +5,58 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+      <!--Let browser know website is optimized for mobile-->
+      <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   
 </head>
+<script src="https://use.fontawesome.com/82e8c93968.js"></script>
 <body>
 
 <%= yield %>
+<!-- Footer starts -->
+        <footer class="page-footer" id="box-shadow" style="background: linear-gradient(to right,#1e3c72, #2a5298);">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+              	
+               <h5 class="white-text" style = "font-family: 'Product Sans', Arial, sans-serif;">CONTACT US</h5>
+               <p class="white-text">unitedpostalservices@gmail.com<br> India </p>
+               <!-- <h5 class="white-text">TWEET US</h5>
+               <p class="white-text" ">Address : Coinwallet technologies <br> Silicon Valley</p> -->
 
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">QUICK LINKS</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="video">ABOUT US</a></li>
+                  <!-- <li><a class="grey-text text-lighten-3" href="#">TERMS OF USE</a></li> -->
+                </ul>
+                <br>
+   <!--              <h6 class="white-text"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;,+919311443083</h6> -->
+                <h6 class="white-text"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;unitedpostalservices@gmail.com</h6>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 United Postal Technologies
+            </div>
+          </div>
+        </footer>
+        <!-- Footer ends -->
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+  	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <!-- <script type="text/javascript" src="index.js"></script> -->
+      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 </body>
 </html>

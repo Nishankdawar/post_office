@@ -1,4 +1,31 @@
 Rails.application.routes.draw do
+  get '/' => 'home#index'
+  get '/insert' => 'home#insert'
+  get '/delete' => 'home#delete'
+  get '/show' => 'home#show'
+  post '/insert_customer' => 'home#insert_customer'
+  post '/insert_money_exchange' => 'home#insert_money_exchange'
+  post '/insert_pobox' => 'home#insert_pobox'
+  post '/insert_post_type' => 'home#insert_post_type'
+  post '/insert_postoffice_staff' => 'home#insert_postoffice_staff'
+  post '/insert_service_payment' => 'home#insert_service_payment'
+  post '/insert_postoffice' => 'home#insert_postoffice'
+  post '/insert_staff_do_money' => 'home#insert_staff_do_money'
+  post '/insert_staff_do_service' => 'home#insert_staff_do_service'
+  post '/insert_staff' => 'home#insert_staff'
+  post '/insert_telephone' => 'home#insert_telephone'
+  post '/delete_customer' => 'home#delete_customer'
+  post '/delete_money_exchange' => 'home#delete_money_exchange'
+  post '/delete_pobox' => 'home#delete_pobox'
+  post '/delete_post_type' => 'home#delete_post_type'
+  post '/delete_postoffice_staff' => 'home#delete_postoffice_staff'
+  post '/delete_service_payment' => 'home#delete_service_payment'
+  post '/delete_postoffice' => 'home#delete_postoffice'
+  post '/delete_staff_do_money' => 'home#delete_staff_do_money'
+  post '/delete_staff_do_service' => 'home#delete_staff_do_service'
+  post '/delete_staff' => 'home#delete_staff'
+  post '/delete_telephone' => 'home#delete_telephone'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

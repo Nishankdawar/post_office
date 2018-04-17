@@ -1,3 +1,256 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// Place all the styles related to the Api controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-verify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ #line-height {
+  line-height: 30px;
+ }
+ #main-bit {
+        box-shadow: 5px 15px 75px;
+  }
+ #box-shadow {
+      box-shadow: 0px 1px 10px #4a4a4a;
+ }
+ #box-shadowc {
+      box-shadow: 1px 10px 20px darkgrey;
+ }
+ #button-new {
+  text-decoration: none;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #f36;
+    margin: 90px;
+    border: 1px solid #f36;
+    border-radius: 32px;
+    padding: 11px 25px;
+    letter-spacing: 1px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+ }
+ #button-new-signup {
+   text-decoration: none;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #f36;
+    background: white;
+    margin: 90px;
+    border: 1px solid #f36;
+    border-radius: 32px;
+    padding: 11px 25px;
+    letter-spacing: 1px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+ }
+  #button-new-signup:hover {
+      color: #fff;
+    border-color: rgba(255,51,102,0);
+    background-color: #f36;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+ }
+ #button-new:hover {
+      color: #fff;
+    border-color: rgba(255,51,102,0);
+    background-color: #f36;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+ }
+  #button-new-signin {
+  text-decoration: none;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    color: #f36;
+    padding: 10px;
+    letter-spacing: 1px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+ }
+/*  #button-new-signin:hover {
+      color: #fff;
+    border-color: rgba(255,51,102,0);
+    background-color: #f36;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+ }*/
+/* #main-heading {
+  text-shadow: 2px 2px black;
+ }*/
+  main {
+    flex: 1 0 auto;
+  }
+                .flip-container {
+                    perspective: 1000px;
+                }
+                    /* flip the pane when hovered */
+                .flip-container:hover .flipper, .flip-container.hover .flipper {
+                        transform: rotateY(180deg);
+                    }
+                .flip-container, .front, .back {
+                    width: 300px;
+                    height: 300px;
+                }
+                /* flip speed goes here */
+                .flipper {
+                    transition: 0.5s;
+                    transform-style: preserve-3d;
+                    position: relative;
+                }
+                /* hide back of pane during swap */
+                .front, .back {
+                    backface-visibility: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                /* front pane, placed above back */
+                .front {
+                    z-index: 2;
+                    /* for firefox 31 */
+                    transform: rotateY(0deg);
+                }
+                /* back, initially hidden pane */
+                .back {
+                    transform: rotateY(180deg);
+                }
+                .card {
+                	background-color: white;
+
+                }
+
+.signup-info {
+  display: flex;
+  background-color: #f8f8f8;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#admit-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.admit-content {
+      line-height: 30px;
+    letter-spacing: .43px;
+    font-size: 13px;
+    color: darkgray;
+}
+#admit-content-heading{
+    padding: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.admit-item {
+      width: 258px;
+    padding: 20px;
+    text-align: center;
+}
+.circle2 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-right: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -moz-animation: spinPulse 1s infinite ease-in-out;
+    -webkit-animation: spinPulse 1s infinite linear;
+}
+
+.circle1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+}
+
+@-moz-keyframes spinPulse {
+    0% {
+        -moz-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -moz-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@-moz-keyframes spinoffPulse {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spinPulse {
+    0% {
+        -webkit-transform: rotate(160deg);
+        opacity: 0;
+        box-shadow: 0 0 1px #2187e7;
+    }
+
+    50% {
+        -webkit-transform: rotate(145deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-320deg);
+        opacity: 0;
+    };
+}
+
+@-webkit-keyframes spinoffPulse {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
+

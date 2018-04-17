@@ -1,0 +1,432 @@
+<body>
+  <!-- Header Div -->
+    <header>
+    
+      <div class="navbar-fixed">
+          <nav>
+          <div class="nav-wrapper" style="background: linear-gradient(to right,#1e3c72, #2a5298);">
+            <a href="#" class="brand-logo" style="margin-left: 2%;
+    font-size: 30px;
+    font-family: sans-serif;letter-spacing: 2px;">UNITED POSTAL SERVICES</a>
+            
+          </div>
+        </nav>
+    </div>
+    </header>
+    <!-- Header Div Ends -->
+    <main>
+     <div class="section" style="background-image: url(signup1.png); padding: 90px;">
+       <div class="container">
+         <h4 class="center" style="font-size: 40px; font-family: sans-serif; font-weight: 300; color: white">
+           DELETE
+         </h4>
+       </div>
+     </div> 
+    <% if @delete_id == 1 || @delete_id == 0%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_customer', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :cid %>
+                            <label for="cid" data-error="wrong" data-success="right" >Customer Id*</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :cname %>
+                            <label for="cname" data-error="wrong" data-success="right" >Customer Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :address %>
+                            <label for="address" data-error="wrong" data-success="right" >Address</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :age %>
+                          <label for="age" data-error="wrong" data-success="right">Age</label>
+                        </div>
+                      </div>
+                    <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 2%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_money_exchange', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :cid%>
+                            <label for="cid" data-error="wrong" data-success="right" >Customer Id*</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :passid %>
+                            <label for="passid" data-error="wrong" data-success="right" >PassID</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :metype %>
+                            <label for="metype" data-error="wrong" data-success="right" >Type</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :amount %>
+                          <label for="amount" data-error="wrong" data-success="right">Amount</label>
+                        </div>
+                      </div>
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 3%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_pobox', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :cid%>
+                            <label for="cid" data-error="wrong" data-success="right" >Customer Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :post_id %>
+                            <label for="post_id" data-error="wrong" data-success="right" >PostId</label>
+                        </div>
+                      </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 4%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_post_type', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :post_id%>
+                            <label for="post_id" data-error="wrong" data-success="right" >PostId</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :ptype %>
+                            <label for="ptype" data-error="wrong" data-success="right" >Type</label>
+                        </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 5%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_postoffice_staff', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sid %>
+                            <label for="sid" data-error="wrong" data-success="right" >Staff Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :post_id %>
+                            <label for="post_id" data-error="wrong" data-success="right" >PostId</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :date %>
+                            <label for="date" data-error="wrong" data-success="right" >Date</label>
+                        </div>
+                      </div>
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 6%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_service_payment', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :billno%>
+                            <label for="billno" data-error="wrong" data-success="right" >BillNo</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :date %>
+                            <label for="date" data-error="wrong" data-success="right" >Date</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :amount %>
+                            <label for="amount" data-error="wrong" data-success="right" >Amount</label>
+                        </div>
+                      </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 7%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_postoffice', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :post_id %>
+                            <label for="post_id" data-error="wrong" data-success="right" >PostId</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :name %>
+                            <label for="name" data-error="wrong" data-success="right" >Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :location %>
+                            <label for="email" data-error="wrong" data-success="right" >Location</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :description %>
+                          <label for="description" data-error="wrong" data-success="right">Description</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :po_type %>
+                          <label for="po_type" data-error="wrong" data-success="right"> Type </label>
+                        </div>
+                      </div>
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 8%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_staff_do_money', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :passid%>
+                            <label for="passid" data-error="wrong" data-success="right" >PassId</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sid %>
+                            <label for="sid" data-error="wrong" data-success="right" >Staff Id</label>
+                        </div>
+                      </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 9%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_staff_do_service', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :billno%>
+                            <label for="billno" data-error="wrong" data-success="right" >Bill Number</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sid %>
+                            <label for="sid" data-error="wrong" data-success="right" >Staff Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :date %>
+                            <label for="date" data-error="wrong" data-success="right" >Date</label>
+                        </div>
+                      </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 10%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_staff', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sname %>
+                            <label for="sname" data-error="wrong" data-success="right" >Staff Name</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sid %>
+                            <label for="sid" data-error="wrong" data-success="right" >Staff Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :designation %>
+                            <label for="designation" data-error="wrong" data-success="right" >Designation</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :address %>
+                          <label for="address" data-error="wrong" data-success="right">Address</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <%= text_field_tag :email %>
+                          <label for="email" data-error="wrong" data-success="right">Email </label>
+                        </div>
+                      </div>
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+    <%if @delete_id == 11%> 
+     <div class="section white">
+       <div class="container">
+          <div class="row">
+            <div class="col s8 push-s4">
+              <div class="card">
+                  <%= form_tag '/delete_telephone', :class => "col s12 m6" do %>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :sid%>
+                            <label for="sid" data-error="wrong" data-success="right" >Staff Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <%= text_field_tag :telephone %>
+                            <label for="telephone" data-error="wrong" data-success="right" >Telephone</label>
+                        </div>
+                      </div>
+                      
+                  <%= submit_tag "Delete", :id => "button-new-signup", :style => "margin:5%;margin-left:30%" %>
+                    <br>
+                    <br>
+                  <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    <% end %>
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</body>
+</html>

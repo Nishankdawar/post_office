@@ -1,0 +1,358 @@
+
+   <style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ td {
+    text-align: center;
+    color: lightslategrey;
+    padding: 10px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    background: linear-gradient(19deg, rgb(78, 67, 118) 0%, rgb(43, 88, 118) 100%);
+    color: white;
+}
+</style>
+<body>
+
+  
+   <ul id="dropdown-customer" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 1) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 1) %></li></li>
+     </ul> 
+    <ul id="dropdown-money_exchange" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 2) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 2) %></li></li>
+     </ul> 
+    <ul id="dropdown-pobox" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 3) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 3) %></li></li>
+     </ul>
+    <ul id="dropdown-posttype" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 4) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 4) %></li></li>
+      
+    </ul>
+    <ul id="dropdown-postoffice_staff" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 5) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 5) %></li></li>
+      
+    </ul>
+    <ul id="dropdown-service_payment" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 6) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 6) %></li></li>
+     
+    </ul>
+    <ul id="dropdown-postoffice" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 7) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 7) %></li></li>
+     
+    </ul>
+    <ul id="dropdown-staff_money" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 8) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 8) %></li></li>
+      
+    </ul>
+    <ul id="dropdown-staff_service" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 9) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 9) %></li></li>
+     
+    </ul>
+    <ul id="dropdown-staff" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 10) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 10) %></li></li>
+         
+    </ul>
+    <ul id="dropdown-telephone" class="dropdown-content">
+      <li><li><%= link_to "Insert", url_for(controller: :home, action: :insert, insert_id: 11) %></li></li>
+      <li><li><%= link_to "Delete", url_for(controller: :home, action: :delete, delete_id: 11) %></li></li>
+        
+    </ul>
+      <div class="navbar-fixed">
+          <nav>
+          <div class="nav-wrapper" style="background: linear-gradient(to right,#1e3c72, #2a5298);">
+            <a href="#" class="brand-logo" style="margin-left: 2%;
+    font-size: 30px;
+    font-family: sans-serif;letter-spacing: 2px;font-family: 'Product Sans', Arial, sans-serif;">UPS</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-customer">&nbsp;&nbsp;Customer</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-money_exchange">&nbsp;&nbsp;Money Exchange</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-pobox">&nbsp;&nbsp;PoBox</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-posttype">&nbsp;&nbsp;PostType</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-postoffice_staff">&nbsp;&nbsp;PostOfficeStaff</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-postoffice">&nbsp;&nbsp;Post Office</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-service_payment">&nbsp;&nbsp;Service Payment</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-staff_money">&nbsp;&nbsp;Staff Money</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-staff_service">&nbsp;&nbsp;Staff Service</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-staff">&nbsp;&nbsp;Staff</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-telephone">&nbsp;&nbsp;Telephone</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    </header>
+    
+    <main>
+     
+
+      <div class="section" style="background: linear-gradient(-227deg, rgb(55, 236, 186) 0%, rgb(114, 175, 211) 100%);">
+        <div class="container">
+          <div class="row">
+           <div class="col s12">           
+            <h5 class="center" style="font-family: Roboto,sans-serif;font-weight: 100;color: white;margin: 10%;font-size: 60px;">Tables</h5>     
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     <div class="section">
+          <div class="outer-transaction-heading" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <div style="font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Customer </div>
+          </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  
+                  <th>Customer Id</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Age</th>
+                </tr>
+                <% i = 0 %>
+                <% @customer.each do |customer| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= customer.cid %></td>
+                  <td><%= customer.cname%></td>
+                  <td><%= customer.address%></td>
+                  <td><%= customer.age%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Money Exchange </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Customer Id</th>              
+                  <th>PassId</th>    
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+                <% i = 0 %>
+                <% @money_exchange.each do |money_exchange| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= money_exchange.cid %></td>
+                  <td><%= money_exchange.passid%></td>
+                  <td><%= money_exchange.metype%></td>
+                  <td><%= money_exchange.amount%></td>
+                                  
+                </tr>
+                <% end %>
+                
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> PoBox </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Customer Id</th>              
+                  <th>PostId</th>    
+                </tr>
+                <% i = 0 %>
+                <% @pobox.each do |pobox| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= pobox.cid %></td>
+                  <td><%= pobox.post_id%></td>
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;">Post Type</div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>PostId</th>              
+                  <th>Type</th>
+                  
+                </tr>
+                <% i = 0 %>
+                <% @post_type.each do |post_type| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= post_type.post_id %></td>
+                  <td><%= post_type.ptype%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Post Office Staff </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Staff Id</th>              
+                  <th>PostId</th>    
+                  <th>Date</th>
+                </tr>
+                <% i = 0 %>
+                <% @postoffice_staff.each do |postoffice_staff| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= postoffice_staff.sid %></td>
+                  <td><%= postoffice_staff.post_id%></td>
+                  <td><%= postoffice_staff.date%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Post Office </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>PostId</th>              
+                  <th>Name</th>    
+                  <th>Location</th>
+                  <th>Description</th>
+                  <th>Type</th>
+                </tr>
+                <% i = 0 %>
+                <% @postoffice.each do |postoffice| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= postoffice.post_id %></td>
+                  <td><%= postoffice.name%></td>
+                  <td><%= postoffice.location%></td>
+                  <td><%= postoffice.description%></td>
+                  <td><%= postoffice.po_type%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Service Payment </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>BillNo</th>              
+                  <th>Date</th>    
+                  <th>Amount</th>
+                  <th>Category</th>
+                </tr>
+                <% i = 0 %>
+                <% @service_payment.each do |service_payment| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= service_payment.billno %></td>
+                  <td><%= service_payment.date%></td>
+                  <td><%= service_payment.amount%></td>
+                  <td><%= service_payment.category%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Staff Do Money </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>PassId</th>              
+                  <th>StaffId</th>    
+                </tr>
+                <% i = 0 %>
+                <% @staff_do_money.each do |staff_do_money| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= staff_do_money.passid %></td>
+                  <td><%= staff_do_money.sid%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Staff Do service </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>BillNo</th>              
+                  <th>Staff Id</th>    
+                  <th>Date</th>
+                </tr>
+                <% i = 0 %>
+                <% @staff_do_service.each do |staff_do_service| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= staff_do_service.billno %></td>
+                  <td><%= staff_do_service.sid%></td>
+                  <td><%= staff_do_service.date%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Staff </div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Staff Name</th>              
+                  <th>Staff Id</th>    
+                  <th>Designation</th>
+                  <th>Address</th>
+                  <th>Email</th>
+                </tr>
+                <% i = 0 %>
+                <% @staff.each do |staff| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= staff.sname %></td>
+                  <td><%= staff.sid%></td>
+                  <td><%= staff.designation%></td>
+                  <td><%= staff.address%></td>
+                  <td><%= staff.email%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+              <div style="text-align: center;font-family: sans-serif;font-weight: 100;font-size: 35px;letter-spacing: 1px;line-height: 100px;"> Telephone</div>
+              <table>
+                <tr>
+                  <th>S.NO</th>
+                  <th>Staff Id</th>              
+                  <th>Telephone</th>    
+                  
+                </tr>
+                <% i = 0 %>
+                <% @telephone.each do |telephone| %>
+                <% i = i + 1 %>
+                <tr>
+                  <td><%= i %></td>
+                  <td><%= telephone.sid %></td>
+                  <td><%= telephone.telephone%></td>
+                                  
+                </tr>
+                <% end %>
+              </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </main>
+      
+</body>
+</html> 
